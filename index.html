@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Swarm Street Fighters</title>
+	<link rel="stylesheet" href="dist/css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	
+	<section style='width: 75%;'>
+		<div class="current-players">
+			<div class="box box-8">
+				<input class='input-box header-number' type="text" placeholder='Number' value='1' readonly>
+				<input class='input-box' type="text" placeholder='Name' id='inp1'>
+				<input class='input-box' type="text" placeholder='Name' id='inp2'>
+				<input class='input-box' type="text" placeholder='Name' id='inp3'>
+				<input class='input-box' type="text" placeholder='Name' id='inp4'>
+			</div>
+			<div class="box box-8">
+				<input class='input-box header-number' type="text" placeholder='Number' value='2' readonly>
+				<input class='input-box' type="text" placeholder='Name' id='inp5'>
+				<input class='input-box' type="text" placeholder='Name' id='inp6'>
+				<input class='input-box' type="text" placeholder='Name' id='inp7'>
+				<input class='input-box' type="text" placeholder='Name' id='inp8'>
+			</div>
+			<div class="box box-8">
+				<input class='input-box header-number' type="text" placeholder='Number' value='3' readonly>
+				<input class='input-box' type="text" placeholder='Name' id='inp9'>
+				<input class='input-box' type="text" placeholder='Name' id='inp10'>
+				<input class='input-box' type="text" placeholder='Name' id='inp11'>
+				<input class='input-box' type="text" placeholder='Name' id='inp12'>
+			</div>
+			<div class="box box-8">
+				<input class='input-box header-number' type="text" placeholder='Number' value='4' readonly>
+				<input class='input-box' type="text" placeholder='Name' id='inp13'>
+				<input class='input-box' type="text" placeholder='Name' id='inp14'>
+				<input class='input-box' type="text" placeholder='Name' id='inp15'>
+				<input class='input-box' type="text" placeholder='Name' id='inp16'>
+			</div>
+			<div class="box box-8">
+				<input class='input-box header-number' type="text" placeholder='Number' value='5' readonly>
+				<input class='input-box' type="text" placeholder='Name' id='inp17'>
+				<input class='input-box' type="text" placeholder='Name' id='inp18'>
+				<input class='input-box' type="text" placeholder='Name' id='inp19'>
+				<input class='input-box' type="text" placeholder='Name' id='inp20'>
+			</div>
+			<div class="box box-8">
+				<input class='input-box header-number' type="text" placeholder='Number' value='6' readonly>
+				<input class='input-box' type="text" placeholder='Name' id='inp21'>
+				<input class='input-box' type="text" placeholder='Name' id='inp22'>
+				<input class='input-box' type="text" placeholder='Name' id='inp23'>
+				<input class='input-box' type="text" placeholder='Name' id='inp24'>
+			</div>
+			<div class="box box-8">
+				<input class='input-box header-number' type="text" placeholder='Number' value='7' readonly>
+				<input class='input-box' type="text" placeholder='Name' id='inp25'>
+				<input class='input-box' type="text" placeholder='Name' id='inp26'>
+				<input class='input-box' type="text" placeholder='Name' id='inp27'>
+				<input class='input-box' type="text" placeholder='Name' id='inp28'>
+			</div>
+			<div class="box box-8">
+				<input class='input-box header-number' type="text" placeholder='Number' value='8' readonly>
+				<input class='input-box' type="text" placeholder='Name' id='inp20'>
+				<input class='input-box' type="text" placeholder='Name' id='inp30'>
+				<input class='input-box' type="text" placeholder='Name' id='inp31'>
+				<input class='input-box' type="text" placeholder='Name' id='inp32'>
+			</div>
+		</div>
+		<main id='main' ng-controller='sectionCtrl as section'>
+			<div class="col part-8">
+				<div class="box box-8"><input type="text"></div>
+				<div class="box box-8"><input type="text"></div>
+				<div class="box box-8"><input type="text"></div>
+				<div class="box box-8"><input type="text"></div>
+				<div class="box box-8"><input type="text"></div>
+				<div class="box box-8"><input type="text"></div>
+				<div class="box box-8"><input type="text"></div>
+				<div class="box box-8"><input type="text"></div>
+			</div>
+
+			<div class="col arrows-8">
+				<div class="arrow arrow-4">
+					<img class='top-arrow' src="dist/img/arrow.jpg" alt="">
+					<img class='bottom-arrow' src="dist/img/arrow.jpg" alt="">
+				</div>
+				<div class="arrow arrow-4">
+					<img class='top-arrow' src="dist/img/arrow.jpg" alt="">
+					<img class='bottom-arrow' src="dist/img/arrow.jpg" alt="">
+				</div>
+				<div class="arrow arrow-4">
+					<img class='top-arrow' src="dist/img/arrow.jpg" alt="">
+					<img class='bottom-arrow' src="dist/img/arrow.jpg" alt="">
+				</div>
+				<div class="arrow arrow-4">
+					<img class='top-arrow' src="dist/img/arrow.jpg" alt="">
+					<img class='bottom-arrow' src="dist/img/arrow.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="col part-4">
+				<div class="box box-4"><input type="text"></div>
+				<div class="box box-4"><input type="text"></div>
+				<div class="box box-4"><input type="text"></div>
+				<div class="box box-4"><input type="text"></div>
+			</div>
+
+			<div class="col arrows-4">
+				<div class="arrow arrow-4">
+					<img class='top-arrow' src="dist/img/arrow.jpg" alt="">
+					<img class='bottom-arrow' src="dist/img/arrow.jpg" alt="">
+				</div>
+				<div class="arrow arrow-4">
+					<img class='top-arrow' src="dist/img/arrow.jpg" alt="">
+					<img class='bottom-arrow' src="dist/img/arrow.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="col part-2">
+				<div class="box box-2"><input type="text"></div>
+				<div class="box box-2"><input type="text"></div>
+			</div>
+
+			<div class="col arrows-2">
+				<div class="arrow arrow-4" style='height: 140px;'>
+					<img class='top-arrow' src="dist/img/arrow.jpg" alt="">
+					<img class='bottom-arrow' src="dist/img/arrow.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="col part-1">
+				<div class="box box-1"><input type="text"></div>
+			</div>
+			
+		</main>
+	</section>
+
+
+	<script src='dist/js/jquery-3.2.1.min.js'></script>
+	<script src='dist/js/main.js'></script>
+</body>
+</html>

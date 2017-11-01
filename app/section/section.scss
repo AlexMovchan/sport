@@ -1,0 +1,199 @@
+body {
+	background : grey;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background-image: url(../img/bg.jpg);
+	background-size: 100% 100%;
+	margin: 0;
+}
+
+.current-players{
+	display: flex;
+	justify-content: space-around;
+	width: 94%;
+	align-items: center;
+	margin: auto;
+  .striked-bg{
+   	background-image: url(../img/strike.png) !important;
+  }
+	.box{
+		width: 105px;
+		height: 105px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
+		border-radius: 5px;
+	   box-shadow: 0 0 90px 0px #cccccc;
+	   background-image: url(../img/box-bg.jpeg);
+	   background-size: cover;
+	   background-position: center;
+	   .striked-block{
+	   	opacity: 0.7;
+	   }
+	   .input-box{
+	   	width: 95%;
+	   	height: 14px;
+			text-align: center;
+			background: transparent;
+			border: none;
+			outline: none;
+			color: white;
+			font-size: 12px;
+			padding: 0;
+	   }
+	   .header-number{
+	   	font-size: 17px;
+	   	height: 17px;
+	   	font-weight: bold;
+	   }
+	   input[type='checkbox']{
+	   	margin: 0;
+	   }
+	}
+}
+
+#main {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 90%;
+	height: 80vh;
+	margin: auto;
+	.col {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-flow: column nowrap;
+		.box {
+			display: flex;
+			align-items: center;
+			border-radius: 5px;
+		   box-shadow: 0 0 90px 0px #cccccc;
+		   background-image: url(../img/box-bg1.jpeg);
+		   background-size: cover;
+		}
+		.arrow{
+			display: flex;
+			flex-flow: column;
+			justify-content: space-between;
+			align-items: center;
+			height: 60px;
+			.top-arrow{
+				height: 18px;
+				width: 100%;
+				transform: rotate(5deg);
+			}
+			.bottom-arrow{
+				height: 18px;
+				width: 100%;
+				transform: rotate(-5deg);
+			}
+		}
+		.box-8 {
+			width: 50px;
+			height: 50px;
+		   input {
+		   	font-size: 2em;
+		   }
+		}
+		.box-4 {
+			width: 80px;
+			height: 80px;
+		   input {
+		   	font-size: 3.5em;
+		   }
+		}
+		.box-2 {
+			width: 140px;
+			height: 140px;
+		   input {
+		   	font-size: 6em;
+		   }
+		}
+		.box-1 {
+			width: 220px;
+			height: 220px;
+		   input {
+		   	font-size: 10em;
+		   }
+		}
+		input {
+		   width: inherit;
+			text-align: center;
+			background: transparent;
+			border: none;
+			outline: none;
+			color: white;
+			font-weight: bold;
+		}
+	}
+	.part-8 {
+		flex-grow: 1;
+	}
+	.part-4 {
+		flex-grow: 2;
+	}
+	.part-2 {
+		flex-grow: 2.5;
+	}
+	.part-1 {
+		flex-grow: 3.5;
+	}
+}
+
+.fighter{
+	&_img{
+		width: 400px;
+		height: 540px;
+		display: flex;
+		background-image: url(../img/fighter1.png);
+		background-size:cover;
+		align-self: flex-end;
+		&-name{
+			width: 300px;
+			height: 150px;
+			align-self: flex-end;
+			background-image: url(../img/bg-info.png);
+			background-size: 100% 100%;
+			border-radius: 10px;
+			display: flex;
+	    flex-flow: column;
+	    align-items: center;
+	    justify-content: center;
+	    margin: 0 auto;
+			input{
+				margin: 15px 0;
+				background: transparent;
+				border: none;
+				outline: none;
+				color: white;
+				font-size: 19px;
+				text-align: center;
+			}
+		}
+	}
+	&-info{
+		width: 400px;
+		height: 400px;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+		background-image: url(../img/bg-info.png);
+		background-size: 100% 100%;
+		border-radius: 10px;
+    margin-top: 100px;
+		input{
+			margin: 10px 0;
+			background: transparent;
+			border: none;
+			outline: none;
+			color: white;
+			font-size: 19px
+		}
+	}
+}

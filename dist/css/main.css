@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+  background: grey;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/bg.jpg);
+  background-size: 100% 100%;
+  margin: 0; }
+
+.current-players {
+  display: flex;
+  justify-content: space-around;
+  width: 94%;
+  align-items: center;
+  margin: auto; }
+  .current-players .striked-bg {
+    background-image: url(../img/strike.png) !important; }
+  .current-players .box {
+    width: 105px;
+    height: 105px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 90px 0px #cccccc;
+    background-image: url(../img/box-bg.jpeg);
+    background-size: cover;
+    background-position: center; }
+    .current-players .box .striked-block {
+      opacity: 0.7; }
+    .current-players .box .input-box {
+      width: 95%;
+      height: 14px;
+      text-align: center;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: 12px;
+      padding: 0; }
+    .current-players .box .header-number {
+      font-size: 17px;
+      height: 17px;
+      font-weight: bold; }
+    .current-players .box input[type='checkbox'] {
+      margin: 0; }
+
+#main {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 90%;
+  height: 80vh;
+  margin: auto; }
+  #main .col {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column nowrap; }
+    #main .col .box {
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+      box-shadow: 0 0 90px 0px #cccccc;
+      background-image: url(../img/box-bg1.jpeg);
+      background-size: cover; }
+    #main .col .arrow {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px; }
+      #main .col .arrow .top-arrow {
+        height: 18px;
+        width: 100%;
+        transform: rotate(5deg); }
+      #main .col .arrow .bottom-arrow {
+        height: 18px;
+        width: 100%;
+        transform: rotate(-5deg); }
+    #main .col .box-8 {
+      width: 50px;
+      height: 50px; }
+      #main .col .box-8 input {
+        font-size: 2em; }
+    #main .col .box-4 {
+      width: 80px;
+      height: 80px; }
+      #main .col .box-4 input {
+        font-size: 3.5em; }
+    #main .col .box-2 {
+      width: 140px;
+      height: 140px; }
+      #main .col .box-2 input {
+        font-size: 6em; }
+    #main .col .box-1 {
+      width: 220px;
+      height: 220px; }
+      #main .col .box-1 input {
+        font-size: 10em; }
+    #main .col input {
+      width: inherit;
+      text-align: center;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: white;
+      font-weight: bold; }
+  #main .part-8 {
+    flex-grow: 1; }
+  #main .part-4 {
+    flex-grow: 2; }
+  #main .part-2 {
+    flex-grow: 2.5; }
+  #main .part-1 {
+    flex-grow: 3.5; }
+
+.fighter_img {
+  width: 400px;
+  height: 540px;
+  display: flex;
+  background-image: url(../img/fighter1.png);
+  background-size: cover;
+  align-self: flex-end; }
+  .fighter_img-name {
+    width: 300px;
+    height: 150px;
+    align-self: flex-end;
+    background-image: url(../img/bg-info.png);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; }
+    .fighter_img-name input {
+      margin: 15px 0;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: 19px;
+      text-align: center; }
+
+.fighter-info {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/bg-info.png);
+  background-size: 100% 100%;
+  border-radius: 10px;
+  margin-top: 100px; }
+  .fighter-info input {
+    margin: 10px 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 19px; }
